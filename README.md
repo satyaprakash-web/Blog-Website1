@@ -5,6 +5,6 @@ Technologies used : React.js, Node.js, Express.js, MongoDB Atlas, Material UI, H
 
 Deployed using Render and netlify.
 
-Deployment Link -- https://blog-website-vaibhav.netlify.app/
+Deployment Link -- 
 
-Heroku Link -- https://mern-blog-vaibhav.herokuapp.com/
+Heroku Link --
