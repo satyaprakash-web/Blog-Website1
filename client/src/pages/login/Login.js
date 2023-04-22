@@ -24,12 +24,12 @@ function Login() {
             if (data.success) {
                 setUser(data.user); // So that can get redirected itself without refreshing the page
                 localStorage.setItem("user", JSON.stringify(data.user));//bec can store user in local storage in form of string
-                // console.log(localStorage.getItem("user"));
+                console.log(localStorage.getItem("user"));
             }
 
         } catch (error) {
             setError(true);
-            console.log(error);
+           console.log(error);
         }
     }
 
@@ -53,7 +53,7 @@ function Login() {
 
             </form>
             <button className="loginRegisterButton">
-                <Link className='link' style={{ color: "white" }} to='/register'>Register</Link>
+                <Link className='link' style={{ color: "Grey" }} to='/register'>Register</Link>
             </button>
             {error && <span style={{ color: "red", textAlign: "center", marginTop: "15px" }}>Please login with correct credentials.</span>}
         </div>
