@@ -79,7 +79,7 @@ app.post('/api/auth/login', async (req, res) => {
             return res.status(400).json({success:false,msg:"Please login with correct credentials"});
         }
 
-        // if loged in successfull send user except password
+        // if logged in successfull send user except password
         const { password, ...others } = user._doc;
         res.status(200).json({success:true,user:others});
 
@@ -99,7 +99,7 @@ app.put('/api/users/update/:id', async (req, res) => {
     if (req.body.userId === req.params.id) {
         if (req.body.password) {
             const salt = bcrypt.genSaltSync(10);
-            // change password
+            // generates a new salt and changes password
             req.body.password = bcrypt.hashSync(req.body.password, salt);
         }
         try {
