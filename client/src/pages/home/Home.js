@@ -33,7 +33,8 @@ function Home() {
     }
 
     fetchPosts();
-    //eslint-disable-next-line
+    //eslint-disable-next
+    //line
   }, [search]);
 
   // loading bar
