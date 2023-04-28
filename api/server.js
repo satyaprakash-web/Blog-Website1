@@ -95,12 +95,13 @@ app.post('/api/auth/login', async (req, res) => {
 
 // update user
 app.put('/api/users/update/:id', async (req, res) => {
-    // check if right user trying to update only , userId provided by user
+    // check if right user is trying to update only , userId provided by user
     if (req.body.userId === req.params.id) {
         if (req.body.password) {
             const salt = bcrypt.genSaltSync(10);
             // generates a new salt and changes password
             req.body.password = bcrypt.hashSync(req.body.password, salt);
+            //// hashes the new password
         }
         try {
             // to update old posts username
