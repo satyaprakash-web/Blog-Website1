@@ -20,7 +20,7 @@ function App() {
       <Router>
         <Navbar />
         <LoadingBar
-            color='#f11946' height={3} transitionTime={600}
+            color='#f11946' height={4} transitionTime={600}
             progress={progress}
             onLoaderFinished={() => setProgress(0)}
           />
