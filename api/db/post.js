@@ -38,7 +38,7 @@ const postSchema = new mongoose.Schema({
         type: Array
     }
 }, 
-// to store time by default
+// to store time by defaulta
 {timestamps : true} );
 
 const Post = new mongoose.model("Post", postSchema);
