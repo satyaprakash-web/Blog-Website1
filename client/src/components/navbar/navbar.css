@@ -10,7 +10,7 @@
 
 .top {
     width: 100%;
-    height: 50px;
+    height: 45px;
     background-color: var(--bgcolor);
     position: sticky;
     top: 0;
