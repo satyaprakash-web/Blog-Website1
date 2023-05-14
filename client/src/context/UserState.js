@@ -5,7 +5,7 @@ const UserState = (props) => {
     const [user, setUser] = useState(JSON.parse(localStorage.getItem("user")) || null); //if user then set user else null, parse because in localStorage it is in string format
     // loading bar
     const [progress, setProgress] = useState(0);
-    // dark-light mode
+    // dark-light mod
     const [mode, setMode] = useState("light");
 
     return (
