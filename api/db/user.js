@@ -35,7 +35,7 @@ const userSchema = new mongoose.Schema({
         default : ""
     },
 }, 
-// to store time by default
+// to store time by defaul
 {timestamps : true} );
 
 const User = new mongoose.model("User", userSchema);
