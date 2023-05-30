@@ -21,7 +21,7 @@ app.use(express.json());
 app.use("/images", express.static(path.join(__dirname, "/images")));
 
 
-//set image storage
+//set image storages
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
         cb(null, "images");
