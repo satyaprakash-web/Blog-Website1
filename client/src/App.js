@@ -24,6 +24,7 @@ function App() {
             progress={progress}
             onLoaderFinished={() => setProgress(0)}
           />
+// 
         <Routes>
           <Route path="/" element={user ? <Home /> : <Navigate to="/login" />} />
           <Route path="/register" element={!user ? <Register /> : <Navigate to="/" />} />
