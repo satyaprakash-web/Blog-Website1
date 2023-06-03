@@ -17,7 +17,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.json());
-// make image folder publics
+// make image folder public
 app.use("/images", express.static(path.join(__dirname, "/images")));
 
 
