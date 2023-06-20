@@ -37,7 +37,7 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
 });
 
 
-// ******************** Authentication*********************
+// ******************** Authentication**********************
 
 //register
 app.post('/api/auth/register', async (req, res) => {
