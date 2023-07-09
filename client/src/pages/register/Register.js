@@ -8,7 +8,7 @@ import LoginIcon from '@mui/icons-material/Login';
 function Register() {
   const navigate = useNavigate();
   const [error, setError] = useState(false);
-  // register user
+  // register users
   const [credentials, setCredentials] = useState({ username: "", email: "", password: "" });
 
 
