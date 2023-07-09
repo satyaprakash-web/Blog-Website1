@@ -23,7 +23,7 @@ function Login() {
             const data = res.data;
             if (data.success) {
                 setUser(data.user); // So that can get redirected itself without refreshing the page
-                localStorage.setItem("user", JSON.stringify(data.user));//because can store user in local storage in form of string
+                localStorage.setItem("user", JSON.stringify(data.user));//because can store user in local storage in form of strings
                 console.log(localStorage.getItem("user"));
             }
 
