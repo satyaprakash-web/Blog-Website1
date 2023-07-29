@@ -167,7 +167,6 @@ app.get("/api/users/:id", async (req, res) => {
 });
 
 
-
 // ********************* CRUD OPERATION ON POST*****************
 
 //CREATE POST
